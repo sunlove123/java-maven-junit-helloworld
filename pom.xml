@@ -29,7 +29,7 @@
 </distributionManagement>
 
   <dependencies>
-    <!-- Testing dependencies specified. -->
+    <!-- Testing dependencies. -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
