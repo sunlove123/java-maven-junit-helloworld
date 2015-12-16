@@ -19,12 +19,12 @@
 <repository>     
 <id>deployment</id>     
 <name>Internal Releases</name>     
-<url>http://10.251.2.57:8082/nexus/content/repositories/devops-maven/</url>  
+<url>http://10.251.2.51:8082/nexus/content/repositories/devops-maven/</url>  
 </repository>  
 <snapshotRepository>     
 <id>deployment</id>     
 <name>Internal Releases</name>     
-<url>http://10.251.2.57:8082/nexus/content/repositories/devops-maven-snapshots/</url>  
+<url>http://10.251.2.51:8082/nexus/content/repositories/devops-maven-snapshots/</url>  
 </snapshotRepository>
 </distributionManagement>
 
