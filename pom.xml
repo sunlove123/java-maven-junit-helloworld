@@ -14,17 +14,22 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-  
+    <developers>
+        <developer>
+            <name>Deepak</name>
+            <email>deenadhayalan.b@cognizant.com</email>
+        </developer>
+    </developers> 
 <distributionManagement>  
 <repository>     
 <id>deployment</id>     
 <name>Internal Releases</name>     
-<url>http://10.251.2.51:8082/nexus/content/repositories/devops-maven/</url>  
+<url>http://localhost:8082/nexus/content/repositories/releases/</url>  
 </repository>  
 <snapshotRepository>     
 <id>deployment</id>     
 <name>Internal Releases</name>     
-<url>http://10.251.2.51:8082/nexus/content/repositories/devops-maven-snapshots/</url>  
+<url>http://localhost:8082/nexus/content/repositories/snapshots/</url>  
 </snapshotRepository>
 </distributionManagement>
 
@@ -104,7 +109,6 @@
       </plugin>
     </plugins>
   </build>
-
   <reporting>
     <plugins>
       <plugin>
@@ -115,5 +119,4 @@
       </plugin>
     </plugins>
   </reporting>
-
 </project>
