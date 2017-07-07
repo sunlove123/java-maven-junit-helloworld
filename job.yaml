@@ -1,0 +1,10 @@
+- job:
+    name: test-job
+    project-type: pipeline
+    sandbox: true
+    pipeline-scm:
+      scm:
+        - hg:
+            url: https://github.com/sunlove123/java-maven-junit-helloworld.git
+            clean: true
+      script-path: Jenkinsfile.groovy
