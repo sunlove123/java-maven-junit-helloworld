@@ -1,10 +1,20 @@
 - job:
-    name: test-job
+    name: LetsTry1
     project-type: pipeline
     sandbox: true
+    properties:
+       - github:
+          url: https://github.com/sunlove123/java-maven-junit-helloworld.git
+    triggers:
+       - pollscm:
+          cron: "* * * * *"
+          ignore-post-commit-hooks: True
     pipeline-scm:
-      scm:
-        - hg:
-            url: https://github.com/sunlove123/java-maven-junit-helloworld.git
-            clean: true
-      script-path: Jenkinsfile.groovy
+      script-path: Jenkinsfile # path to pipeline script definition, "Jenkinsfile" by default.
+      scm: # normal scm definitions
+        - git:
+            branches:
+              - '*/master'
+            url: 'https://github.com/sunlove123/java-maven-junit-helloworld.git'
+            skip-tag: true
+            wipe-workspace: false
