@@ -52,4 +52,10 @@ public class HelloTest {
         Hello hi = new Hello();
         hi.setTimes(-1);
     }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testIllegalArgumentForHelloNegative() {
+        Hello hi = new Hello();
+        hi.setTimes(Hello.MAXIMUM_AMOUNT_OF_TIMES);
+    }
 }
