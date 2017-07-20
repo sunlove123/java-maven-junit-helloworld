@@ -1,4 +1,6 @@
 node {
+   stage checkout 
+   checkout scm
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       git 'https://github.com/sunlove123/java-maven-junit-helloworld.git'
