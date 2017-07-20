@@ -8,12 +8,24 @@ node {
    }
    stage('Build') {
       // Run the maven build
-      if (isUnix()) {
          sh 'mvn clean package -DskipTests=True'
-      }
    }
    stage('Results') {
-      junit '**/target/surefire-reports/TEST-*.xml'
-      archive 'target/*.jar'
+      sh 'echo HelloWorld'
+   }
+   stage('Results1') {
+      sh 'echo HelloWorld'
+   }
+   stage('Results2') {
+      sh 'echo HelloWorld'
+   }
+   stage('Results3') {
+      sh 'echo HelloWorld'
+   }
+   stage('Results4') {
+      sh 'echo HelloWorld'
+   }
+   stage('Results') {
+      sh 'echo HelloWorld'
    }
 }
