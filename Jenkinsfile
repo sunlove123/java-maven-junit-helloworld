@@ -1,5 +1,5 @@
 node {
-   stage'edit' 
+   stage'ed it' 
    checkout scm
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
