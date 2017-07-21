@@ -10,7 +10,7 @@ node {
    }
    stage('Build') {
       // Run the maven build
-         sh 'mvn clean package -DskipTests=True'
+         sh 'mvn clean package test'
    }
    stage('Results') {
       sh 'echo HelloWorld'
