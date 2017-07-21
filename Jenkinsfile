@@ -2,7 +2,7 @@ node {
    stage'ed it' 
    checkout scm
    stage('Preparation') { // for display purposes
-      // Get some code from a GitHub repository
+      // Get some code from a GitHub - repository
       git 'https://github.com/sunlove123/java-maven-junit-helloworld.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
