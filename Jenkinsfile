@@ -11,7 +11,7 @@ node {
    stage('Build') {
       // Run the maven build
       sh 'mvn clean package -Dmaven.test.failure.ignore=true'
-      archive '*'
+      archive ''
    }
    stage('Results') {
       sh 'echo HelloWorld'
