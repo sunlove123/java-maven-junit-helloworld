@@ -1,9 +1,8 @@
+env.dockerimagename="buildon/buildon:v2"
 node {
-   stage'ed it' 
-   checkout scm
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub - repository
-      git 'https://github.com/sunlove123/java-maven-junit-helloworld.git'
+      checkout scm
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
